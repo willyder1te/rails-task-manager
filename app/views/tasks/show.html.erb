@@ -1,0 +1,14 @@
+<h1><%= @task.title %></h1>
+<div class="desription">
+  <p><%= @task.details %></p>
+</div>
+ <%=form_for(@task) do |t| %>
+ <div class="checkiecheck"> <%= t.check_box :completed, id:"checkiecheck" %></div>
+<% end %>
+  <%=link_to "Back to List", tasks_path%>
+<script>
+  let checkBox = document.querySelector(".checkiecheck");
+  console.log(checkBox);
+  checkBox.addEventListener("click", (event) => {
+          console.log("Hello World");})
+</script>

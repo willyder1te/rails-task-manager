@@ -14,3 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+// checkBox.addEventListener("click", (event) => {
+//   console.log("Hello World");
+// });
